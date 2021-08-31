@@ -10,6 +10,7 @@ export const CTA = () => (
     width="100%"
     maxWidth="48rem"
     py={2}
+    border="2px" borderColor="pink.900"
   >
     <ChakraLink isExternal href="https://chakra-ui.com" flexGrow={1} mx={2}>
       <Button width="100%" bgGradient="linear(to-tr, teal.300,yellow.400)">

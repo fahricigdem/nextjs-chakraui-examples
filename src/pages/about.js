@@ -16,7 +16,7 @@ const Index = () => {
   return (
     <Container height="100vh">
       <DarkModeSwitch />
-      <Box w="430px" h="330px" bg={boxColor[colorMode]} mt="300px" />
+      <Box w="430px" h="330px" bg={boxColor[colorMode]} mt="300px" >Fahri Cigdem</Box>
     </Container>
 
   )
