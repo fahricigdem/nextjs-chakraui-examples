@@ -1,10 +1,12 @@
 import {
-  Link as ChakraLink, Text, Box, Code, List, ListIcon, ListItem, Button
+  Link as ChakraLink, Text, Box, Code, List, ListIcon, ListItem, Button, Heading, VStack
 } from '@chakra-ui/react'
+
 
 import { Container } from '../components/Container'
 import { DarkModeSwitch } from '../components/DarkModeSwitch'
 import { useColorMode } from '@chakra-ui/react'
+
 
 
 const Index = () => {
@@ -14,9 +16,12 @@ const Index = () => {
   const boxColor = { 'light': "red", "dark": "blue" }
 
   return (
-    <Container height="100vh">
+    <Container border="2px" borderColor="red">
       <DarkModeSwitch />
-      <Box w="430px" h="330px" bg={boxColor[colorMode]} mt="300px" />
+      <VStack w="430px" h="330px" bg={boxColor[colorMode]} mt="100px" borderRadius="xl">
+        <Heading>Home</Heading>
+
+      </VStack>
     </Container>
 
   )
