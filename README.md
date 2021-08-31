@@ -1,11 +1,10 @@
-# see it --> https://nextjs-chakraui-examples-99q2yfzkk-fahricigdem.vercel.app/
+# see it --> [here](https://github.com/fahricigdem/nextjs-chakraui-examples/deployments/activity_log?environment=Production)
 
 ## with
 
 ```bash
 npx create-next-app --example with-chakra-ui with-chakra-ui-app
 ```
-
 
 # Example app with [chakra-ui](https://github.com/chakra-ui/chakra-ui)
 
