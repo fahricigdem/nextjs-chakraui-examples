@@ -1,31 +1,36 @@
 import {
   Link as ChakraLink, Text, Box, Code, List, ListIcon, ListItem, Button, Heading, VStack
 } from '@chakra-ui/react'
-
+import { useColorMode } from '@chakra-ui/react'
+import Head from 'next/head'
 
 import { Container } from '../components/Container'
-import { DarkModeSwitch } from '../components/DarkModeSwitch'
-import { useColorMode } from '@chakra-ui/react'
 
 
 
-const Index = () => {
+
+
+const About = () => {
 
   const { colorMode } = useColorMode()
   console.log(colorMode)
   const boxColor = { 'light': "red", "dark": "blue" }
 
   return (
-    <Container border="2px" borderColor="red">
-      <DarkModeSwitch />
-      <VStack w="430px" h="330px" bg={boxColor[colorMode]} mt="100px" borderRadius="xl">
+    <Container >
+      <Head>
+        <title>About</title>
+      </Head>
 
-        <Heading>About Me</Heading>
+      <VStack bg={boxColor[colorMode]} mt="100px" borderRadius="xl" p="3">
+
+        <Heading>About Us</Heading>
 
       </VStack>
+
     </Container>
 
   )
 }
 
-export default Index
+export default About
